@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report an issue
-title: ''
+title: 'bug: '
 assignees: []
 labels:
   - type: fix
