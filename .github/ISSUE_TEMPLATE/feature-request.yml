@@ -1,0 +1,35 @@
+name: Feature Request
+description: Make a suggestion on a feature or improvement for the project
+title: 'feat: '
+assignees: []
+labels:
+  - type: feat
+  - status: awaiting-triage
+
+body:
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: This would solve...
+      description: A clear and concise description of the problem this feature request relates to, if applicable.
+      placeholder: Describe the problem this feature would solve...
+
+  - type: textarea
+    id: proposed_implementation
+    attributes:
+      label: The implementation should look like...
+      description: A clear and concise description of how you expect this to be resolved or implemented.
+      placeholder: Describe your proposed implementation...
+
+  - type: textarea
+    id: alternatives_considered
+    attributes:
+      label: I have also considered...
+      description: A clear and concise description of any alternative solutions or features you have considered.
+      placeholder: Describe alternative solutions you've considered...
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots or ideas about the feature request here.

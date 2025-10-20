@@ -1,0 +1,39 @@
+name: Security Report
+description: Report a security hole
+title: 'security: '
+assignees: []
+labels:
+  - cat: opsec
+  - status: awaiting-triage
+
+body:
+  - type: textarea
+    id: affected_products
+    attributes:
+      label: This affects...
+      description: The products or services this vulnerability exists within.
+      placeholder: Describe which products or services are affected...
+
+  - type: textarea
+    id: affected_platforms
+    attributes:
+      label: On these platforms...
+      description: The platforms this vulnerability is known to exist on.
+      placeholder: List the affected platforms...
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: When you...
+      description: |
+        The steps required to observe the security flaw.
+        NOTE: Leave this as N/A if it may be exploited against users by bad actors.
+      placeholder: |
+        Describe the steps to reproduce (or enter N/A if sensitive)...
+
+  - type: textarea
+    id: vulnerability_description
+    attributes:
+      label: Which causes...
+      description: A clear and concise description of the vulnerability here.
+      placeholder: Describe what vulnerability or security issue this causes...
