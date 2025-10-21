@@ -3,7 +3,8 @@ name: "CI: Synchronise Labels"
 on:
   workflow_call:
     secrets:
-      GITHUB_TOKEN:
+      REPO_TOKEN:
+        description: "Token to access repository and manage labels"
         required: true
 
 jobs:
@@ -22,5 +23,5 @@ jobs:
       - name: "[EXEC] Synchronize labels"
         uses: crazy-max/ghaction-github-labeler@v5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.REPO_TOKEN }}
           yaml-file: .github-shared/.github/labels.yml
