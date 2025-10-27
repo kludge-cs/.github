@@ -1,0 +1,36 @@
+name: "CI: CodeQL Analysis"
+
+on:
+  workflow_call:
+    inputs:
+      languages:
+        description: "Languages to analyse with CodeQL"
+        required: false
+        default: "javascript"
+        type: string
+
+jobs:
+  analyze:
+    name: Analyze ${{ inputs.languages }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [${{ inputs.languages }}]
+
+    permissions:
+      contents: read
+      security-events: write
+
+    steps:
+      - name: "[INIT] Checkout repository"
+        uses: actions/checkout@v4
+
+      - name: "[INIT] Set up CodeQL"
+        uses: github/codeql-action/init@v4
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: autobuild
+
+      - name: "[EXEC] Perform analysis"
+        uses: github/codeql-action/analyze@v4
