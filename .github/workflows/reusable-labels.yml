@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "[INIT] Checkout current repository"
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: "[INIT] Checkout labels"
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           repository: kludge-cs/.github
           path: .github-shared
