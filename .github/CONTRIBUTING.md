@@ -58,7 +58,7 @@ out-of-scope for this project, and that's okay - they will likely be better
 placed elsewhere, and keeping our projects light allows them to be as useful as
 possible.
 
-[UNIX philosophy]: https://harmful.cat-v.org/cat-v/unix_prog_design.pdf
+[UNIX philosophy]: https://doi.org/10.1002/j.1538-7305.1984.tb00055.x
 
 ## Code of Conduct
 
