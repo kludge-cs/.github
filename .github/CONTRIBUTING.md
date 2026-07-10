@@ -5,9 +5,9 @@
 Before you spend valuable time contributing to this project, please first
 discuss the change you wish to make with its maintainers. A list of maintainers
 can be found in the package metadata file - for example, `Cargo.toml`,
-`package.json`, or `pyproject.toml` - or `.github/CODEOWNERS`. While we would
-prefer you file an issue to keep communication open and transparent, you may
-also reach out by email.
+`package.json`, or `pyproject.toml` - or `CODEOWNERS`. While we would prefer you
+file an issue to keep communication open and transparent, you may also reach out
+by email.
 
 Next, ensure your environment is prepared. Check the README for guidance on
 language-specific tooling, but note that either [Nix] or the project package
@@ -65,4 +65,4 @@ possible.
 Please refer to our [Code of Conduct] for guidelines on interacting with our
 projects and their respective communities.
 
-[Code of Conduct]: https://github.com/kludge-cs/.github/blob/main/.github/CODE_OF_CONDUCT.md
+[Code of Conduct]: https://radicle.network/nodes/rad.kludgecs.com/rad:z2gJsz87p85eSNWV25zXJGgerYhh9/tree/.github/CODE_OF_CONDUCT.md
